@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #00004d;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.gridContainer {
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 25px;
+}
+.box {
+  border-radius: 20px;
+}
+#box1 {
+  background-color: #000080;
+  grid-row: 1/-1;
+}
+#box2 {
+  background-color: #ff944d;
+}
+#box3 {
+  background-color: #4db8ff;
+}
+#box4 {
+  background-color: #ff6666;
+}
+#box5 {
+  background-color: #66ff99;
+}
+#box6 {
+  background-color: #9933ff;
+}
+#box7 {
+  background-color: #ffdb4d;
+}
+
+.sub_box {
+  width: 250px;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #000080;
+  border-radius: 15px;
+}
+
+.sub_box_1 {
+  width: 250px;
+  height: 370px;
+  background-color: #6600ff;
+  border-radius: 15px;
+  position: relative;
+}
+
+.img_holder {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.img_holder img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.7px;
+  left: 2.7px;
+}
+
+.name {
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+.name span {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.buttons button {
+  display: block;
+  border: none;
+  background: none;
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  left: 50px;
+}
+
+#daily {
+  top: 390px;
+}
+#weekly {
+  top: 425px;
+}
+#monthly {
+  top:460px;
+}
+
+button:active {
+  color: white;
+  font-size: 15px;
+}
+
+.category {
+  padding: 25px;
+  color: #ffffff;
+  font-weight: bold;
+} 
+.dot {
+  float: right;
+}
+.time_hours {
+  font-size: 40px;
+  color: white;
+  margin-left: 25px;
+}
+.previous_data {
+  margin-left: 25px;
+  color: white;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 425px) {
+  .gridContainer {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #box1{
+    height: 350px;
+  }
+  
+  .sub_box_1 {
+    width: 100%;
+    height: 230px;
+  }
+  
+  .sub_box {
+    width: 100%;
+    height: 200px;
+  }
+  .name {
+    position: absolute;
+    top: 30px;
+    left: 200px;
+  }
+  .buttons {
+    position: absolute;
+    top: -150px;
+    left: 20px;
+    
+  }
+}
